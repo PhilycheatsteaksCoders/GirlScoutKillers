@@ -1,0 +1,7 @@
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\bin\Debug\AdventureGameProject.exe.config
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\bin\Debug\AdventureGameProject.exe
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\bin\Debug\AdventureGameProject.pdb
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\obj\Debug\AdventureGameProject.csprojResolveAssemblyReference.cache
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\obj\Debug\AdventureGameProject.csproj.CoreCompileInputs.cache
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\obj\Debug\AdventureGameProject.exe
+C:\Users\C Sharp.B056\source\repos\AdventureGameSolution\AdventureGameProject\obj\Debug\AdventureGameProject.pdb
