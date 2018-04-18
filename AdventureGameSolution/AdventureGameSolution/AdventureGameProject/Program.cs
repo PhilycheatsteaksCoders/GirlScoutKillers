@@ -23,17 +23,13 @@ namespace AdventureGameProject
           /*S  0*/ "you get out of your hybrid suburu and start to walk towards banana mamas, (your local smoothie store) when your blinded for a split second by the glem of a couple metalic badges on a sash \n you remember your freind telling you about how pushy the girl scouts can be.\n you have a choice to make, continue into the store and walk by them or buy some of thier cookies \n press A to continue, or B to stop and buy cookies",
           /*A  1*/ "you continue past them and act as if you didnt hear them (this angers them, so watch out in the future) you grab a cup and walk to the smoothie machine and find a ten dollar bill \n you pick it up and pocket it ",
           /*B  2*/  "you break down and give into the inhuman persuassion of the girl scouts, they offer you your choice of smores, samoas, and thin mints \n Press A for smores, B for samoas, and C for thin mints",
-
           /*SPECIAL A3*/ "you chose smores but they tell you they are then out so you can only get samoas",
-
           /*SPECIAL B4*/ "you chose somoas and they tell you that you total will be ten dollars, too bad you only have a twenty and they have no change, so you buy two samoas and no longer have money for your daily smoothie",
-
           /*SPECIAL C5*/ " oh to bad" + CharacterName + "you chose thin mints and your immidiatly struck by lightning",
-
-          /*C  6*/ "The lights return and you move into a room at the end of the hall. \nThere is a vending machine.",
-          /*A  7*/ "Luckily " + CharacterName + " you have that coin you found and you buy yourself a snack.",
-          /*B  8*/  "Too bad you don't have a coin on you," + CharacterName + ",\nor you would have been able to get a snack.",
-          /*E  9 */ "You begin to climb the stairs to the next floor."
+          /*C  6*/// "The lights return and you move into a room at the end of the hall. \nThere is a vending machine.",
+          /*A  7*/ //"Luckily " + CharacterName + " you have that coin you found and you buy yourself a snack.",
+          /*B  8*/  //"Too bad you don't have a coin on you," + CharacterName + ",\nor you would have been able to get a snack.",
+          /*E  9 */// "You begin to climb the stairs to the next floor."
 
         };
         static string[] PartTwo = {
@@ -69,8 +65,7 @@ namespace AdventureGameProject
         {
             for (int section = 1; section <= Scenarios; section++)
             {
-                string input = "A, B, C";
-
+                string input = "";
 
                 switch (section)
                 {
@@ -99,37 +94,36 @@ namespace AdventureGameProject
                         else
                         {
                             Console.WriteLine(PartOne[2]);
-                        }
-                        
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.Write("Enter your choice: ");
+                            input = Console.ReadLine();
+                            input = input.ToLower();
+                            Console.ResetColor();
 
-                        Console.ForegroundColor = ConsoleColor.DarkRed;
-                        Console.Write("Enter your choice: ");
-                        input = Console.ReadLine();
-                        input = input.ToLower();
-                        Console.ResetColor();
-
-                        if (input == "a")
+                            if (input == "a")
                             {
-                                Console.WriteLine(PartOne[3]);
+                                Console.WriteLine(PartOne[4]);
 
                             }
                             else if (input == "b")
                             {
-                                Console.WriteLine(PartOne[4]);
+                                Console.WriteLine(PartOne[5]);
                             }
 
                             else
                             {
-                                Console.WriteLine(PartOne[5]);
+                                Console.WriteLine(PartOne[6]);
                                 EndGame();
-                          
                             }
-                        
-                        
+                        }
+        
 
-                        
+                        //6) print last piece of the section
+                        Console.WriteLine(PartOne[7]);
+
+
+
                         break;
-                       
 
                     case 2:
                         //Part Two
@@ -241,9 +235,6 @@ namespace AdventureGameProject
             Console.WriteLine("this is the end of the Scouts");
 
             Console.WriteLine("press enter to end it");
-            Console.ReadLine();
-            System.Environment.Exit(1);
-
 
         }
     }
